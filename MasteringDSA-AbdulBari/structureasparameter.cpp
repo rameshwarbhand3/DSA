@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+struct rectangle{
+    double length;
+    float breadth;
+};
+void fun(struct rectangle r){
+    cout<<"length "<<r.length<<endl;
+    cout<<"breadth "<<r.breadth<<endl;
+}
+void fun1(struct rectangle r1){
+    cout<<"perimeter of rectangle is "<<(r1.length+r1.breadth+r1.length+r1.breadth) << endl;
+}
+int main(){
+    struct rectangle r ={10,5};
+    struct rectangle r1={10,5};
+    fun(r);
+    fun1(r1);
+    cout<<"Area of rectangle is "<< r.length*r.breadth<<endl;
+    return(0);
+}
